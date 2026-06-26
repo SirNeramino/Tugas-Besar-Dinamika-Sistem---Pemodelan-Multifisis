@@ -1,0 +1,45 @@
+parameter awal (yang di foto di laporan)
+
+
+L = 180e-6; w = 30e-6;          
+h1 = 125e-9; h2 = 0.5e-6;       
+rho1 = 2700; rho2 = 2400;       
+E1 = 80e9; E2 = 180e9;          
+
+m1_act = rho1 * w * L * h1;
+m2_act = rho2 * w * L * h2;
+m_total = m1_act + m2_act;
+m_eq = 0.2357 * m_total;       
+
+I1 = (w * h1^3) / 12;
+I2 = (w * h2^3) / 12;
+k1 = (3 * E1 * I1) / L^3;
+k2 = (3 * E2 * I2) / L^3;
+k_eq = k1 + k2;
+
+c = 8e-8;                       
+K = 5.9098e-7;                 
+
+
+parameter baru (gadipake tp Waktu itu w pake analisis aja)
+
+
+L = 80e-6; w = 30e-6;          
+h1 = 125e-9; h2 = 0.5e-6;       
+rho1 = 2700; rho2 = 2400;       
+E1 = 80e9; E2 = 180e9;         
+
+m1_act = rho1 * w * L * h1;
+m2_act = rho2 * w * L * h2;
+m_total = m1_act + m2_act;
+m_eq = 0.2357 * m_total;        
+
+I1 = (w * h1^3) / 12;
+I2 = (w * h2^3) / 12;
+k1 = (3 * E1 * I1) / L^3;
+k2 = (3 * E2 * I2) / L^3;
+k_eq = k1 + k2;
+
+
+c = 8e-8;                       
+K = 5.9098e-7;                  

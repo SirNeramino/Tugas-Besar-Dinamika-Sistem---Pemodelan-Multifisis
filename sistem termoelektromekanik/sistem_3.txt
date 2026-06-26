@@ -1,0 +1,17 @@
+
+v = 0.017;           
+alpha = 17e-6;       
+c = 385;            
+alpha_R = 0.0039;    
+rho_el = 17e-9;     
+l0 = 0.1;            
+a = 1e-3;           
+rho = 8900;          
+h = 30;              
+
+a1 = (4 * h) / (rho * c * a);
+a2 = alpha_R;
+a3 = (4 * h * (alpha + alpha_R)) / (rho * c * a);
+a4 = (4 * h * alpha * alpha_R) / (rho * c * a);
+a5 = (v^2) / (rho * rho_el * c * l0^2);
+a6 = alpha * l0;
